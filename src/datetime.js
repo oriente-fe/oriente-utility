@@ -1,3 +1,5 @@
+import { padStart } from '~/helper/string'
+
 export const toGMTSlicedString = iso => {
   if (!iso) return ''
   const locale = 'id'
@@ -11,4 +13,6 @@ export const toGMTSlicedString = iso => {
   return `${day} ${month}, ${year} ${hour}:${minute}`
 }
 
-const padStart = n => n.toString().padStart(2, '0')
+export default {
+  toGMTSlicedString
+}

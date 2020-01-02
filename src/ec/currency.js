@@ -50,3 +50,9 @@ export const getCurrencyDefaultOptions = currency => {
       }
   }
 }
+
+export default {
+  formatMoney,
+  formatNumberWithCommas,
+  getCurrencyDefaultOptions
+}

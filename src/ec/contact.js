@@ -3,3 +3,7 @@ export const formatMobileNumber = mobile => {
   if (!match) return mobile
   return `${match[1]} ${match[2]}`
 }
+
+export default {
+  formatMobileNumber
+}
