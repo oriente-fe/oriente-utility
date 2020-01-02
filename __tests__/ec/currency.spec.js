@@ -17,6 +17,19 @@ describe('formatMoney', () => {
     expect(formatMoney(1234567)).toBe('$1,234,567')
     expect(formatMoney(12345678)).toBe('$12,345,678')
   })
+  it('returns formatted string with PH options', () => {
+    const options = { currency: 'PHP' }
+    expect(formatMoney(-123, options)).toBe('- ₱123.00')
+    expect(formatMoney(-1234, options)).toBe('- ₱1,234.00')
+    expect(formatMoney(1, options)).toBe('₱1.00')
+    expect(formatMoney(12, options)).toBe('₱12.00')
+    expect(formatMoney(123, options)).toBe('₱123.00')
+    expect(formatMoney(1234, options)).toBe('₱1,234.00')
+    expect(formatMoney(12345, options)).toBe('₱12,345.00')
+    expect(formatMoney(123456, options)).toBe('₱123,456.00')
+    expect(formatMoney(1234567, options)).toBe('₱1,234,567.00')
+    expect(formatMoney(12345678, options)).toBe('₱12,345,678.00')
+  })
   it('returns formatted string with ID options', () => {
     const options = { currency: 'IDR' }
     expect(formatMoney(-123, options)).toBe('- Rp123')

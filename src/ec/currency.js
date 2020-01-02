@@ -27,6 +27,13 @@ export const formatNumberWithCommas = (number, currency, options) => {
 
 export const getCurrencyDefaultOptions = currency => {
   switch (currency) {
+    case 'PH':
+    case 'PHP':
+      return {
+        currency: 'PHP',
+        symbol: '₱',
+        precision: 2
+      }
     case 'ID':
     case 'IDR':
       return {
