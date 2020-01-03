@@ -1,7 +1,40 @@
-export { default as ecContact } from './ec/contact'
-export { default as ecCurrency } from './ec/currency'
+import capitalize from './capitalize'
+import zeroStart from './zeroStart'
 
-export { default as helperString } from './helper/string'
+import formatMobile from './formatMobile'
+import formatPrice from './formatPrice'
+import formatSymbolPrice from './formatSymbolPrice'
 
-export { default as datetime } from './datetime'
-export { default as validation } from './validation'
+import getCurrencyOpts from './getCurrencyOpts'
+import getIdGMTString from './getIdGMTString'
+
+import isLengthEqualTo from './isLengthEqualTo'
+
+export default {
+  capitalize,
+  zeroStart,
+
+  formatMobile,
+  formatPrice,
+  formatSymbolPrice,
+
+  getCurrencyOpts,
+  getIdGMTString,
+
+  isLengthEqualTo
+}
+
+export {
+  /* eslint-disable */
+  capitalize,
+  zeroStart,
+
+  formatMobile,
+  formatPrice,
+  formatSymbolPrice,
+
+  getCurrencyOpts,
+  getIdGMTString,
+
+  isLengthEqualTo
+}

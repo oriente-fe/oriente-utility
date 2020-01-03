@@ -1,6 +1,6 @@
-import string from './helper/string'
+import zeroStart from './zeroStart'
 
-const toGMTSlicedString = iso => {
+const getIdGMTString = iso => {
   if (!iso) return ''
   const locale = 'id'
   const date = new Date(iso)
@@ -8,11 +8,9 @@ const toGMTSlicedString = iso => {
   const year = date.toLocaleDateString(locale, { year: 'numeric' })
   const month = date.toLocaleDateString(locale, { month: 'short' })
   const day = date.toLocaleDateString(locale, { day: '2-digit' })
-  const hour = string.padStart(date.getHours())
-  const minute = string.padStart(date.getMinutes())
+  const hour = zeroStart(date.getHours(), 2)
+  const minute = zeroStart(date.getMinutes(), 2)
   return `${day} ${month}, ${year} ${hour}:${minute}`
 }
 
-export default {
-  toGMTSlicedString
-}
+export default getIdGMTString
