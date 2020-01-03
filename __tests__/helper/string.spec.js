@@ -1,4 +1,6 @@
-import { capitalize } from '~/helper/string'
+import string from '~/helper/string'
+
+const { capitalize } = string
 
 describe('capitalize', () => {
   it('success', () => {

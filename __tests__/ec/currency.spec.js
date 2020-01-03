@@ -1,8 +1,10 @@
-import {
+import currency from '~/ec/currency'
+
+const {
   formatMoney,
   formatNumberWithCommas,
   getCurrencyDefaultOptions
-} from '~/ec/currency.js'
+} = currency
 
 describe('formatMoney', () => {
   it('returns formatted string with default options', () => {

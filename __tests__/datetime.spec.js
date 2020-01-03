@@ -1,4 +1,6 @@
-import { toGMTSlicedString } from '~/datetime'
+import datetime from '~/datetime'
+
+const { toGMTSlicedString } = datetime
 
 describe('toGTMSlicedString', () => {
   it('success', () => {

@@ -1,4 +1,6 @@
-import { lengthEqualTo } from '~/validation'
+import validation from '~/validation'
+
+const { lengthEqualTo } = validation
 
 describe('lengthEqualTo', () => {
   const err = 'Input length should be 4'

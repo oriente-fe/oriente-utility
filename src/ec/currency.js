@@ -1,4 +1,4 @@
-export const formatMoney = (amount, options = {}) => {
+const formatMoney = (amount, options = {}) => {
   const number = Number(amount)
   if (isNaN(number)) {
     return amount
@@ -14,7 +14,7 @@ export const formatMoney = (amount, options = {}) => {
   return `${number <= 0 ? '- ' : ''}${symbol}${price}`
 }
 
-export const formatNumberWithCommas = (number, currency, options) => {
+const formatNumberWithCommas = (number, currency, options) => {
   const localeOptions = Object.assign(
     {
       minimumFractionDigits: 0,
@@ -25,7 +25,7 @@ export const formatNumberWithCommas = (number, currency, options) => {
   return Number(number).toLocaleString(currency, localeOptions)
 }
 
-export const getCurrencyDefaultOptions = currency => {
+const getCurrencyDefaultOptions = currency => {
   switch (currency) {
     case 'PH':
     case 'PHP':

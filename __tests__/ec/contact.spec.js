@@ -1,4 +1,6 @@
-import { formatMobileNumber } from '~/ec/contact'
+import contact from '~/ec/contact'
+
+const { formatMobileNumber } = contact
 
 it('formatMobileNumber', () => {
   expect(formatMobileNumber('+62-1234567890')).toBe('+62 1234567890')
