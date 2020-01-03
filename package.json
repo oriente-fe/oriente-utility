@@ -1,12 +1,14 @@
 {
   "name": "oriente-utility",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "repository": "git@github.com:oriente-fe/oriente-utility.git",
   "author": "Tony Pai <tony77794@gmail.com>",
   "license": "MIT",
   "main": "dist/oriente-utility.umd.js",
   "module": "dist/oriente-utility.esm.js",
-  "files": ["dist/*.js"],
+  "files": [
+    "dist/*.js"
+  ],
   "scripts": {
     "test": "NODE_ENV=test NODE_ICU_DATA=node_modules/full-icu/ jest",
     "lint": "eslint src/**/*.js",
