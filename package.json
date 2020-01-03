@@ -1,6 +1,6 @@
 {
   "name": "oriente-utility",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/oriente-utility.umd.js",
   "repository": "git@github.com:oriente-fe/oriente-utility.git",
   "author": "Tony Pai <tony77794@gmail.com>",
