@@ -1,4 +1,4 @@
-import { padStart } from '~/helper/string'
+import { padStart } from './helper/string'
 
 export const toGMTSlicedString = iso => {
   if (!iso) return ''
