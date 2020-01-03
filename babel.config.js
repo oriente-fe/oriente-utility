@@ -13,7 +13,7 @@ module.exports = {
         ]
       ]
     },
-    cjs: {
+    umd: {
       presets: ['@babel/preset-env']
     }
   }

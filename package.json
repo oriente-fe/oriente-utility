@@ -1,17 +1,17 @@
 {
   "name": "oriente-utility",
   "version": "1.1.0",
-  "main": "cjs/index.js",
+  "main": "dist/oriente-utility.umd.js",
   "repository": "git@github.com:oriente-fe/oriente-utility.git",
   "author": "Tony Pai <tony77794@gmail.com>",
   "license": "MIT",
-  "module": "esm/index.js",
+  "module": "dist/oriente-utility.esm.js",
   "scripts": {
     "test": "NODE_ENV=test NODE_ICU_DATA=node_modules/full-icu/ jest",
     "lint": "eslint src/**/*.js",
     "build:esm": "NODE_ENV=esm rollup -c",
-    "build:cjs": "NODE_ENV=cjs rollup -c",
-    "prepare": "yarn build:esm && yarn build:cjs"
+    "build:umd": "NODE_ENV=umd rollup -c",
+    "prepare": "yarn build:esm && yarn build:umd"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

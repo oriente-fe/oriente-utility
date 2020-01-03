@@ -7,7 +7,7 @@ export default {
   input: 'src/index.js',
   output: {
     name: 'oriente-utility',
-    file: `${NODE_ENV}/index.js`,
+    file: `dist/oriente-utility.${NODE_ENV}.js`,
     format: NODE_ENV
   },
   plugins: [resolve(), commonjs()]
