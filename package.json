@@ -1,6 +1,6 @@
 {
   "name": "oriente-utility",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "repository": "git@github.com:oriente-fe/oriente-utility.git",
   "author": "Tony Pai <tony77794@gmail.com>",
@@ -29,7 +29,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test && yarn lint --fix && git add ."
+      "pre-commit": "yarn test && yarn lint --fix"
     }
   }
 }
