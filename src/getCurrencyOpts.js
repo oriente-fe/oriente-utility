@@ -3,6 +3,7 @@ const getCurrencyOpts = currency => {
     case 'PH':
     case 'PHP':
       return {
+        key: 'PH',
         currency: 'PHP',
         symbol: '₱',
         precision: 2
