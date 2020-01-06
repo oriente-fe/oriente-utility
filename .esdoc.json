@@ -5,6 +5,7 @@
   "excludes": ["\\.config\\.js$"],
   "plugins": [
     {"name": "esdoc-standard-plugin"},
-    {"name": "./plugins/fixImport.js"}
+    {"name": "./plugins/fixImport.js"},
+    {"name": "esdoc-inject-script-plugin", "option": {"enable": true, "scripts": ["./plugins/focus.js"]}}
   ]
 }
