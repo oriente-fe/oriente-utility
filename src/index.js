@@ -1,40 +1,52 @@
+import formatPrice from './price/formatPrice'
+import formatSymbolPrice from './price/formatSymbolPrice'
+import getCurrencyOpts from './price/getCurrencyOpts'
+
+import getQueries from './query/getQueries'
+import addQueries from './query/addQueries'
+import removeQueries from './query/removeQueries'
+
 import capitalize from './capitalize'
 import zeroStart from './zeroStart'
-
 import formatMobile from './formatMobile'
-import formatPrice from './formatPrice'
-import formatSymbolPrice from './formatSymbolPrice'
-
-import getCurrencyOpts from './getCurrencyOpts'
 import getIdGMTString from './getIdGMTString'
-
+import getParsedCookie from './getParsedCookie'
 import isLengthEqualTo from './isLengthEqualTo'
+import isEmpty from './isEmpty'
 
 export default {
-  capitalize,
-  zeroStart,
-
-  formatMobile,
   formatPrice,
   formatSymbolPrice,
-
   getCurrencyOpts,
-  getIdGMTString,
 
-  isLengthEqualTo
+  getQueries,
+  addQueries,
+  removeQueries,
+
+  capitalize,
+  zeroStart,
+  formatMobile,
+  getIdGMTString,
+  getParsedCookie,
+  isLengthEqualTo,
+  isEmpty
 }
 
 export {
   /* eslint-disable */
-  capitalize,
-  zeroStart,
-
-  formatMobile,
   formatPrice,
   formatSymbolPrice,
-
   getCurrencyOpts,
-  getIdGMTString,
 
-  isLengthEqualTo
+  getQueries,
+  addQueries,
+  removeQueries,
+
+  capitalize,
+  zeroStart,
+  formatMobile,
+  getIdGMTString,
+  getParsedCookie,
+  isLengthEqualTo,
+  isEmpty
 }
