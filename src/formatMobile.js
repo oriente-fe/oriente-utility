@@ -1,6 +1,10 @@
 /**
  * Format mobile numbers
  *
+ * @example
+ * formatMobile('+62-1234567890') // +62 1234567890
+ * formatMobile('+886-987654321') // +886 987654321
+ *
  * @param {string} mobile - mobile numbers
  * @returns {string}
  */
