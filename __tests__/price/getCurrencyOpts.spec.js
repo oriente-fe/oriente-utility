@@ -1,4 +1,4 @@
-import getCurrencyOpts from '~/getCurrencyOpts'
+import getCurrencyOpts from '~/price/getCurrencyOpts'
 
 describe('getCurrencyOpts', () => {
   it('should return PH option', () => {

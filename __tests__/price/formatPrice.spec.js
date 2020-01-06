@@ -1,4 +1,4 @@
-import formatPrice from '~/formatPrice'
+import formatPrice from '~/price/formatPrice'
 
 describe('formatPrice', () => {
   it('success', () => {

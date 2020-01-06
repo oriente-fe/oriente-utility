@@ -1,4 +1,4 @@
-import formatSymbolPrice from '~/formatSymbolPrice'
+import formatSymbolPrice from '~/price/formatSymbolPrice'
 
 describe('formatSymbolPrice', () => {
   it('returns formatted string with default options', () => {
