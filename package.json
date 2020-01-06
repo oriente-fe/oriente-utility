@@ -45,5 +45,8 @@
     "hooks": {
       "pre-commit": "yarn test && yarn lint --fix"
     }
+  },
+  "dependencies": {
+    "query-string": "^6.9.0"
   }
 }
