@@ -10,6 +10,9 @@
     "dist/*.js"
   ],
   "scripts": {
+    "start": "browser-sync start --server --files ./docs --ss ./docs",
+    "dev": "yarn doc & yarn start",
+    "doc": "nodemon --watch src --watch plugins ./node_modules/.bin/esdoc",
     "test": "NODE_ENV=test NODE_ICU_DATA=node_modules/full-icu/ jest",
     "lint": "eslint src/**/*.js",
     "build:esm": "NODE_ENV=esm rollup -c",

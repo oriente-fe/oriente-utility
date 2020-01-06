@@ -1,0 +1,10 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "includes": ["\\.js$"],
+  "excludes": ["\\.config\\.js$"],
+  "plugins": [
+    {"name": "esdoc-standard-plugin"},
+    {"name": "./plugins/fixImport.js"}
+  ]
+}
