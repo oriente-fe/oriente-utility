@@ -28,19 +28,31 @@ const { formatMobile } = require('oriente-utility')
 
 ## Contribute
 
-Please follow the naming convention as below:
+Start development server
+
+```
+yarn dev
+```
+
+Follow the naming convention as below:
 
 - `formatXXX`: parameter type and return type are the same
 - `getXXX`: parameter type and return type are different
 - `isXXX`: return type is boolean or string (e.g. validation)
 - `XXX`: common helpers (e.g. string, array, ...etc)
 
-Let's create a math utility for demo.
+Let's create a math utility:
 
 1. Create `src/addOne.js` file
-1. Write code and add default export
+1. Write code with [jsdoc](https://yuri4ever.github.io/jsdoc/) and add default export
 
    ```js
+   /**
+    * Add one to the number
+    *
+    * @param {number} n - input number
+    * @returns {number}
+    */
    const addOne = n => {
      return Number(n) + 1
    }
