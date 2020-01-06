@@ -1,5 +1,11 @@
 import zeroStart from './zeroStart'
 
+/**
+ * Get GMT string in ID format
+ *
+ * @param {Date} iso - date object
+ * @returns {string}
+ */
 const getIdGMTString = iso => {
   if (!iso) return ''
   const locale = 'id'

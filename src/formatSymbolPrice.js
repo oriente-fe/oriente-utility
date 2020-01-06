@@ -1,6 +1,13 @@
 import getCurrencyOpts from './getCurrencyOpts'
 import formatPrice from './formatPrice'
 
+/**
+ * Format price with symbol
+ *
+ * @param {number} amount - price
+ * @param {CurrencyOptions} options - definition of currency and fraction digit
+ * @returns {string}
+ */
 const formatPriceWithSymbol = (amount, options = {}) => {
   const number = Number(amount)
   if (isNaN(number)) {

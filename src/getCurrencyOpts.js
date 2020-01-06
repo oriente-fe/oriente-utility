@@ -1,3 +1,17 @@
+/**
+ * @typedef {Object} CurrencyOptions
+ * @property {string} key - PH, ID
+ * @property {string} currency - PHP, IDR
+ * @property {string} symbol - ₱, Rp, $
+ * @property {number} precision - fraction digits
+ */
+
+/**
+ * Get currency options
+ *
+ * @param {string} currency - PH, ID
+ * @returns {CurrencyOptions}
+ */
 const getCurrencyOpts = currency => {
   switch (currency) {
     case 'PH':
