@@ -1,6 +1,8 @@
 # Oriente Utility
 
-A collection of validation, normalization and helpers.
+A collection of validation, normalization and business related helpers which can only be used in modern web development with transpiler.
+
+This library is for internal use, it has **no babel** and **no terser**, therefore it will not compatible to all kinds of usage.
 
 [Document](#)
 
