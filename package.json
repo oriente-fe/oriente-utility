@@ -6,9 +6,6 @@
   "license": "MIT",
   "main": "dist/oriente-utility.umd.js",
   "module": "dist/oriente-utility.esm.js",
-  "files": [
-    "dist/*.js"
-  ],
   "scripts": {
     "start": "browser-sync start --server --files ./docs --ss ./docs",
     "dev": "yarn doc & yarn start",
